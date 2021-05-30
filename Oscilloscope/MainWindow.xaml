@@ -1,0 +1,15 @@
+﻿<Window x:Class="Oscilloscope.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Oscilloscope"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="825" Width="875" ResizeMode="CanResize" SizeChanged="Window_SizeChanged">
+    <Grid>
+        <Canvas x:Name="canvas" Loaded="canvas_Loaded" Background="Black"></Canvas>
+        <Button x:Name="btnAdd" Click="btnAdd_Click" Width="50" Height="32" VerticalAlignment="Top" HorizontalAlignment="Left">Add</Button>
+        <Slider x:Name="slideAmplitude" Minimum="1" Maximum="11" Value="6" ValueChanged="slideAmplitude_ValueChanged" IsSnapToTickEnabled="True" TickPlacement="BottomRight" Canvas.Left="268" Canvas.Top="110" Height="28" Width="208" Margin="105,4,0,0" VerticalAlignment="Top" HorizontalAlignment="Left"/>
+        <Slider x:Name="slideCycles" Minimum="1" Maximum="11" Value="6" ValueChanged="slideCycles_ValueChanged" IsSnapToTickEnabled="True" TickPlacement="BottomRight" Canvas.Left="268" Canvas.Top="110" Height="28" Width="208" Margin="328,4,0,0" VerticalAlignment="Top" HorizontalAlignment="Left"/>
+    </Grid>
+</Window>
