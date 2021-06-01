@@ -9,7 +9,8 @@
     <Grid>
         <Canvas x:Name="canvas" Loaded="canvas_Loaded" Background="Black"></Canvas>
         <Button x:Name="btnAdd" Click="btnAdd_Click" Width="50" Height="32" VerticalAlignment="Top" HorizontalAlignment="Left">Add</Button>
-        <Slider x:Name="slideAmplitude" Minimum="1" Maximum="11" Value="6" ValueChanged="slideAmplitude_ValueChanged" IsSnapToTickEnabled="True" TickPlacement="BottomRight" Canvas.Left="268" Canvas.Top="110" Height="28" Width="208" Margin="105,4,0,0" VerticalAlignment="Top" HorizontalAlignment="Left"/>
+        <Slider x:Name="slideAmplitude" Minimum="0.01" Maximum="6.3" Value="3.14" ValueChanged="slideAmplitude_ValueChanged" TickPlacement="BottomRight" Canvas.Left="268" Canvas.Top="110" Height="28" Width="208" Margin="105,4,0,0" VerticalAlignment="Top" HorizontalAlignment="Left"/>
         <Slider x:Name="slideCycles" Minimum="1" Maximum="11" Value="6" ValueChanged="slideCycles_ValueChanged" IsSnapToTickEnabled="True" TickPlacement="BottomRight" Canvas.Left="268" Canvas.Top="110" Height="28" Width="208" Margin="328,4,0,0" VerticalAlignment="Top" HorizontalAlignment="Left"/>
+        <TextBlock x:Name="lblFPS" Width="100" Height="40" Foreground="White" Margin="0,10,10,0" Text="Poggers" TextAlignment="Center" FontSize="20" HorizontalAlignment="Right" VerticalAlignment="Top"/>
     </Grid>
 </Window>
